@@ -55,6 +55,7 @@ On the second level of the structure, we have placed the Arduino controller and 
 | 1      | MPU-9250       |https://learn.sparkfun.com/tutorials/mpu-9250-hookup-guide/all         |
 | 3        | *HC-SR04 Ultrasonic Sensor  | https://www.sparkfun.com/products/15569 |
 |1      | TCS3200 Sensor        | https://www.adafruit.com/product/1334   |
+|1      | lithum Battery 12v     | https://www.amazon.in/INVENTO-1Pcs-11-1V-55x65x18mm-Rechargeable/dp/B072SPSG2W   |
 
 ## How to prepare the repo based on the template
 
