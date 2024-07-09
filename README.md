@@ -43,6 +43,9 @@ Our car is built on an RC structure featuring four wheels and a rear-wheel drive
 
 On the second level of the structure, we have placed the Arduino controller and the Raspberry Pi, along with a 12-volt battery down in the first floor, a camera, and other components that will be detailed in the parts section.
 
+
+## Parts:
+
 ## How to prepare the repo based on the template
 
 _Remove this section before the first commit to the repository_
