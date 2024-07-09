@@ -22,11 +22,11 @@ We are the [Barq Engineers] from Palestine. We are a group of three ambitious yo
 In this competition, our goal is to showcase to the world what Palestinian youth can achieve, even under the harsh conditions of occupation. Through our efforts, we aim to send a powerful message about resilience, creativity, and the limitless potential that exists within every Palestinian boy.
 
 ## contact with us:
-*Amjad Ghannam _email:amjadgh72@gmail.com _whatsapp:+972594387565
+* Amjad Ghannam _email:amjadgh72@gmail.com _whatsapp:+972594387565
 
-*Rayan Farid _email : _whatsapp: +972568997345
+* Rayan Farid _email : _whatsapp: +972568997345
 
-*Qusay Laila _email : _whatsapp: +972592509054
+* Qusay Laila _email : _whatsapp: +972592509054
 
 ## The coach:
 Eng.Mohammad Muamar...
