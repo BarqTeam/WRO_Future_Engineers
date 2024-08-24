@@ -1,4 +1,3 @@
 Electromechanical diagrams
 ====
-
-This directory must contain one or several schematic diagrams in form of JPEG, PNG or PDF of the electromechanical components illustrating all the elements (electronic components and motors) used in the vehicle and how they connect to each other.
+This section details all the components utilized in the project, accompanied by a schematic diagram illustrating how they are interconnected.
