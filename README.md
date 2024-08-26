@@ -100,6 +100,71 @@ The front ultrasonic sensor played a critical role in detecting when the car was
 
 This approach emphasized spatial awareness and precise distance measurement, allowing the car to make informed directional decisions based on its environment rather than relying on visual cues. Ultimately, we decided that this solution was the most effective for our needs.
 
+## Lap Counting Mechanism:
+####Loop-Based Counting with Ultrasonic Sensor and IMU
+
+#####Overview:
+This method utilizes a software-based loop counter to track lap completion. The robot employs an ultrasonic sensor to detect when a lap is completed. If the sensor measures a distance of less than 50 cm to a specified point or object, the system registers the start of a new lap. The robot's steering is precisely managed by an Inertial Measurement Unit (IMU), ensuring accurate navigation during turns.
+
+## IMU-Based Steering
+#### Overview: 
+In our autonomous vehicle, precise steering control is essential for accurate navigation. We achieve this through an IMU-based steering mechanism. The Inertial Measurement Unit (IMU) supplies real-time data on the vehicle’s angular velocity, which is crucial for calculating the yaw angle (the vehicle's turning angle) and ensuring stable and accurate steering.
+
+#### Understanding the IMU:
+An IMU (Inertial Measurement Unit) integrates several sensors, typically including a 3-axis accelerometer and a 3-axis gyroscope. These components work together to monitor the vehicle's movement and orientation in three-dimensional space.
+
+* Accelerometer: Measures acceleration along the X, Y, and Z axes, which helps determine the vehicle’s tilt and linear movement.
+* Gyroscope: Measures angular velocity (the rate of rotation) around the X, Y, and Z axes, providing critical information for understanding rotational motion, especially the yaw angle.
+#### The X, Y, and Z Axes: 
+Understanding these axes is fundamental for interpreting IMU data:
+
+* X-Axis: Represents roll, the tilting motion of the vehicle from side to side.
+* Y-Axis: Represents pitch, the tilting motion of the vehicle from front to back.
+* Z-Axis: Represents yaw, the rotational movement around the vertical axis, crucial for steering as it defines the vehicle’s direction of travel.
+#### Calculating the Yaw Angle: 
+The yaw angle (
+�
+�
+θ 
+z
+​
+ ) quantifies the vehicle's rotation around the Z-axis. The IMU’s gyroscope provides angular velocity data along this axis, indicating the rate of rotation.
+
+To determine the vehicle's heading, we calculate the yaw angle by integrating the angular velocity over time. This calculation updates continuously to maintain precise tracking of the vehicle’s direction.
+
+The yaw angle is computed using the following equation:
+
+\theta_z = \theta_{z, \text{previous}} + \left( \frac{\text{gyro}_z - \text{gyro_z_offset}}{131.0} \right) \times \Delta t
+
+Where:
+
+�
+�
+θ 
+z
+​
+  is the current yaw angle.
+�
+�
+,
+previous
+θ 
+z,previous
+​
+  is the yaw angle from the previous time step.
+gyro
+�
+gyro 
+z
+​
+  is the angular velocity around the Z-axis, provided by the gyroscope.
+\text{gyro_z_offset} is the gyroscope offset, determined during calibration to correct for any drift.
+Δ
+�
+Δt is the time elapsed between the current and previous readings.
+### Importance of Gyro Offset:
+The gyroscope offset (\text{gyro_z_offset}) is vital as gyroscopes can experience slight errors or biases over time, known as drift. By calculating and subtracting this offset, we ensure that the yaw angle calculation remains accurate, preventing gradual deviations from the true value.
+
 
 
 
