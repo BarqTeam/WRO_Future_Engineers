@@ -72,6 +72,13 @@ We extend our heartfelt gratitude to our coach and all the team members who have
  ## 2. Programming Languages
 We utilized C++ for coding the Arduino, ensuring efficient and reliable control of the hardware. Additionally, we employed Python to code the Raspberry Pi, particularly for implementing OpenCV with the Pi Camera.
 
+## 3. The First Chassis
+Initially, we decided to modify an RC car by adding the necessary components and creating a second layer to put them on. However, we encountered several challenges. The first issue arose when trying to create proper holes for mounting the servo motor. This led to further complications when attempting to implement a rack and pinion steering system (you can view the FreeCAD models for the rack and pinion in the "Models" section of this repository) using an MG699R servo motor.
+
+Due to the high power and torque of the servo, it couldn't stay securely in place and kept shifting, which compromised the stability of the steering system. As a result, we decided to move on to our next plan: building a new chassis from scratch.
+
+
+
 
 
 
