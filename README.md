@@ -61,13 +61,16 @@ Palestine Polytechnic University
 We extend our heartfelt gratitude to our coach and all the team members who have played a crucial role in bringing this project to life.
 
 ## 1.2 Vehicle Strengths
-* Chassis and Mechanism: Our vehicle was meticulously built from scratch, utilizing CNC-machined and 3D-printed parts. We also incorporated components from the EV3 Lego kit for critical mechanisms, such as the steering system and differential.
+*  Chassis and Mechanism : Our vehicle was meticulously built from scratch, utilizing CNC-machined and 3D-printed parts. We also incorporated components from the EV3 Lego kit for critical mechanisms, such as the steering system and differential.
 
 * Speed: Powered by a 24-volt lithium battery, our car achieves impressive speeds, giving it a competitive edge in performance.
 
 * Mobility and Flexibility: The differential system significantly enhances the vehicle's ability to maneuver, providing smooth and flexible turns.
 
 * Acceleration: The car boasts excellent acceleration, thanks to a well-calibrated gear ratio of 1.4:1 and a high-torque gear system that delivers powerful performance.
+
+ ## 2. Programming Languages
+We utilized C++ for coding the Arduino, ensuring efficient and reliable control of the hardware. Additionally, we employed Python to code the Raspberry Pi, particularly for implementing OpenCV with the Pi Camera.
 
 
 
