@@ -101,9 +101,9 @@ The front ultrasonic sensor played a critical role in detecting when the car was
 This approach emphasized spatial awareness and precise distance measurement, allowing the car to make informed directional decisions based on its environment rather than relying on visual cues. Ultimately, we decided that this solution was the most effective for our needs.
 
 ## Lap Counting Mechanism:
-####Loop-Based Counting with Ultrasonic Sensor and IMU
+#### Loop-Based Counting with Ultrasonic Sensor and IMU
 
-#####Overview:
+##### Overview:
 This method utilizes a software-based loop counter to track lap completion. The robot employs an ultrasonic sensor to detect when a lap is completed. If the sensor measures a distance of less than 50 cm to a specified point or object, the system registers the start of a new lap. The robot's steering is precisely managed by an Inertial Measurement Unit (IMU), ensuring accurate navigation during turns.
 
 ## IMU-Based Steering
