@@ -165,6 +165,9 @@ z
 ### Importance of Gyro Offset:
 The gyroscope offset (\text{gyro_z_offset}) is vital as gyroscopes can experience slight errors or biases over time, known as drift. By calculating and subtracting this offset, we ensure that the yaw angle calculation remains accurate, preventing gradual deviations from the true value.
 
+## 6. Obstacle Avoidance Round Challenge
+In this round we included the pi camera for  this round
+
 
 
 
