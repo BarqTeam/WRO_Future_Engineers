@@ -168,6 +168,18 @@ The gyroscope offset (\text{gyro_z_offset}) is vital as gyroscopes can experienc
 ## 6. Obstacle Avoidance Round Challenge
 In this round we included the pi camera for  this round
 
+## 7.Power 
+Lithium Polymer (LiPo) batteries are highly favored in robotics due to their superior energy density, lightweight construction, and capability to deliver high currents. These attributes make them exceptionally suited for applications that demand both substantial power and agility, such as our autonomous robot.
+Advantages of LiPo Batteries:
+
+1- High Energy Density:
+
+2- High Discharge Rate:
+
+3- Lightweight and Compact:
+
+4- Stable Voltage Output:
+
 
 
 
