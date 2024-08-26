@@ -33,27 +33,27 @@ In this repository, we've documented our entire journey over the past three mont
 
 We are deeply grateful to everyone who contributed to our work. The success of this project is a testament to the dedication and collaboration of our incredible team, which consists of:
 
-*Amjad Ghannam:
+* Amjad Ghannam:
 Amjad is responsible for managing our social media accounts, including GitHub. He is the creative force behind our design concepts, overseeing the development of the car's body, its mechanical systems, and other related components. Additionally, Amjad assists with coding.
-# Contact Information:
+Contact Information:
                      Email: amjadgh72@gmail.com
                      WhatsApp: +972594387565
 
-*Qusay Laila:
+* Qusay Laila:
 Qusay is our team leader and the mastermind behind problem-solving. He excels in CAD design and manages the main code, assembling all the functions like pieces of a Lego set.
-# Contact Information:
+Contact Information:
                     Email: qusaylaila.work@gmail.com
                     WhatsApp: +972592509054
 
-*Rayan Farid:
+* Rayan Farid:
 Rayan is our designer for 3D parts and CNC components. He also manages serial communication and contributes to the code alongside Qusay. Additionally, Rayan serves as a GitHub editor.
-# Contact Information:
+Contact Information:
                      Email: rayanplaystation180@gmail.com
                      WhatsApp: +972568997345
 
 *The Coach: Eng. Mohammad Muamar
 Eng. Mohammad Muamar, a Palestinian engineer and graduate of Palestine Polytechnic University in Hebron, has been our steadfast guide throughout this journey. His unwavering support, especially during challenging times, has been invaluable.
-# Contact Information:
+Contact Information:
 Email: moh.mummar@gmail.com
 Phone: +970594958003
 Palestine Polytechnic University
