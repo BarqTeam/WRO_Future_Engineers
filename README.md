@@ -197,7 +197,7 @@ Key Characteristics of the 24V LiPo Battery:
 * Weight: Lightweight design, generally around 300g for a 2200mAh battery, important for maintaining the robot’s agility and maneuverability.
 
   ## 8.components
-  | Quantity | Status                             | Description                                                                                                                                             |
+| Quantity | Status                             | Description                                                                                                                                             |
 | ---------| ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1        | Raspberry Pi 4 Model B             |https://www.raspberrypi.com/products/raspberry-pi-4-model-b/                   |
 | 1        | *Arduino Mega:          | (https://store.arduino.cc/products/arduino-mega-2560-rev3)            |
