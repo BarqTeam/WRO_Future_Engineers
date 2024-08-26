@@ -21,20 +21,46 @@ We are the [Barq Engineers] from Palestine. We are a group of three ambitious yo
 
 In this competition, our goal is to showcase to the world what Palestinian youth can achieve, even under the harsh conditions of occupation. Through our efforts, we aim to send a powerful message about resilience, creativity, and the limitless potential that exists within every Palestinian boy.
 
-## contact with us:
-* Amjad Ghannam _email:amjadgh72@gmail.com
-                _whatsapp:+972594387565
+## Project Overview
 
-* Rayan Farid _email :rayanplaystation180@gmail.com
-              _whatsapp: +972568997345
+We began working on the WRO Future Engineers 2024 competition nearly three months ago. You can find more details about the competition in the official rules.
 
-* Qusay Laila _email :qusaylaila.work@gmail.com
-             _whatsapp: +972592509054
+In summary, the challenge requires us to design and build a self-driving car capable of navigating a specific path set by the judges. The car must be equipped with the appropriate components to successfully complete the course.
 
-## The coach:
-Eng.Mohammad Muamar...
+In this repository, we've documented our entire journey over the past three months, capturing every step, challenge, and achievement along the way.
 
-a palestinian engineer and graduate of Palestine Polytchnic University in Hebron http://mailto:info@ppu.edu/ We extend our heartfelt gratitude to our coach for all he has done for us, especially during the challenging times. His unwavering support and dedication have been invaluable. If you wish to reach out to him, feel free to contact him via email moh.mummar@gmail.com or phone +970594958003
+## 1.1 Team Management
+
+We are deeply grateful to everyone who contributed to our work. The success of this project is a testament to the dedication and collaboration of our incredible team, which consists of:
+
+*Amjad Ghannam:
+Amjad is responsible for managing our social media accounts, including GitHub. He is the creative force behind our design concepts, overseeing the development of the car's body, its mechanical systems, and other related components. Additionally, Amjad assists with coding.
+# Contact Information:
+                     Email: amjadgh72@gmail.com
+                     WhatsApp: +972594387565
+
+*Qusay Laila:
+Qusay is our team leader and the mastermind behind problem-solving. He excels in CAD design and manages the main code, assembling all the functions like pieces of a Lego set.
+# Contact Information:
+                    Email: qusaylaila.work@gmail.com
+                    WhatsApp: +972592509054
+
+*Rayan Farid:
+Rayan is our designer for 3D parts and CNC components. He also manages serial communication and contributes to the code alongside Qusay. Additionally, Rayan serves as a GitHub editor.
+# Contact Information:
+                     Email: rayanplaystation180@gmail.com
+                     WhatsApp: +972568997345
+
+*The Coach: Eng. Mohammad Muamar
+Eng. Mohammad Muamar, a Palestinian engineer and graduate of Palestine Polytechnic University in Hebron, has been our steadfast guide throughout this journey. His unwavering support, especially during challenging times, has been invaluable.
+# Contact Information:
+Email: moh.mummar@gmail.com
+Phone: +970594958003
+Palestine Polytechnic University
+
+We extend our heartfelt gratitude to our coach and all the team members who have played a crucial role in bringing this project to life.
+
+
 
 ## Barq team's social accounts
 
