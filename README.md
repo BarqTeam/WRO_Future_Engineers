@@ -77,6 +77,19 @@ Initially, we decided to modify an RC car by adding the necessary components and
 
 Due to the high power and torque of the servo, it couldn't stay securely in place and kept shifting, which compromised the stability of the steering system. As a result, we decided to move on to our next plan: building a new chassis from scratch.
 
+## 4. Programming Challenges
+##Detecting Turns and Direction
+In the WRO Future Engineers competition, the car's direction isn't fixed—it can move either clockwise or counterclockwise, adding complexity to navigation. This unpredictability is particularly challenging when the car needs to execute precise U-turns at specific points on the track.
+
+# First Solution: Using the TCS3200 Color Sensor
+* Color Detection: We initially programmed the TCS3200 sensor to identify specific colors on the track. An orange line signaled that the car should turn clockwise, while a blue line indicated a counterclockwise turn.
+
+* Controlled Turning: Upon detecting a color, the car was instructed to turn at a specific angle. This angle was precisely controlled using an Inertial Measurement Unit (IMU), ensuring the car made accurate and consistent turns, regardless of external factors like speed or track conditions.
+
+*Code Implementation: The process was automated through predefined functions such as detectOrangeLine and detectBlueLine, which triggered the appropriate turning actions based on the color detected.
+
+This approach provided a straightforward method for determining the car's direction based on visual cues from the track, with the IMU ensuring precise turning control. However, this solution proved suboptimal due to the car's high speed and the limitations of the TCS3200, which was not the best choice for color detection in this context.
+
 
 
 
