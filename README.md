@@ -59,11 +59,13 @@ In this competition, our goal is to showcase to the world what Palestinian youth
 
 ## Project Overview
 
-We began working on the WRO Future Engineers 2024 competition nearly three months ago. You can find more details about the competition in the official rules.
+We began working on the WRO Future Engineers 2024 competition nearly three months ago. 
+The WRO Future Engineers competition challenges teams to design and build autonomous vehicles capable of navigating complex paths and obstacles. Participants must integrate advanced engineering, programming, and design skills to create innovative solutions. The competition emphasizes creativity, technical precision, and teamwork, pushing the limits of robotics and AI. Teams showcase their work in a final competition, judged on performance, design, and innovation.
 
-In summary, the challenge requires us to design and build a self-driving car capable of navigating a specific path set by the judges. The car must be equipped with the appropriate components to successfully complete the course.
+Our team, led by Qusay Laila, developed an advanced self-driving car from scratch, integrating CNC-machined and 3D-printed parts with components from the EV3 Lego kit. Powered by a 24-volt lithium battery, the car boasts high speed, smooth maneuverability, and excellent acceleration thanks to a well-designed differential and a gear ratio of 1.4:1. We included a Pi camera for obstacle detection and fine-tuned its software for optimal performance. We ensured the vehicle's seamless integration of mechanical and software systems. The car is lightweight at 1.2 kg, with room to compete in various challenges beyond the Future Engineers competition. Our GitHub repository documents the entire journey, including coding, design, and team management strategies.
+You can find more details about the competition in the official rules.
 
-In this repository, we've documented our entire journey over the past three months, capturing every step, challenge, and achievement along the way.
+
 
 ## 1.1 Team Management
 
