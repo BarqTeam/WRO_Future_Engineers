@@ -390,18 +390,6 @@ Our car is versatile enough to compete in multiple competitions beyond the Futur
 
 
 
-
-
-
-
-
-## Overview
-Our car is built on an RC structure featuring four wheels and a rear-wheel drive system. It is powered by a DC motor that controls the wheels and a servo motor for steering. The car is equipped with three ultrasonic sensors , gyroscope and a RGB color sensor to ensure it stays on the right path.
-
-On the second level of the structure, we have placed the Arduino controller and the Raspberry Pi, along with a 12-volt battery down in the first floor, a camera, and other components that will be detailed in the parts section.
-
-
-
 ## How to prepare the repo based on the template
 
 _Remove this section before the first commit to the repository_
