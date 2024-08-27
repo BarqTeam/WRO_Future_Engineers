@@ -20,7 +20,7 @@ This repository contains engineering materials of a self-driven vehicle's model 
 
    1.1. [Team Management](#Team-Management)
    
-   1.2. [Vehicle Strengths](#Vehicle-Strengths)  
+   1.3. [Vehicle Strengths](#Vehicle-Strengths)  
 
 2. [Programming Language ](programming-language)
    
@@ -96,7 +96,12 @@ Palestine Polytechnic University
 
 We extend our heartfelt gratitude to our coach and all the team members who have played a crucial role in bringing this project to life.
 
-## 1.2 Vehicle Strengths
+## 1.2Barq team's social accounts
+* youtube : https://www.youtube.com/@barqteam
+* Instagram : https://www.youtube.com/redirect?event=channel_description&redir_token=QUFFLUhqa2hKa3pxcXBHNF9OUFptZ1NDVXhmRUl0Y0w5Z3xBQ3Jtc0tuX3RwZmR5MjAtVy1aa0lBdWZuUVNwWjN5RlRsUUJyTHc1OUhKUHFndWRielRZM1k2QjF4Rkpzb3BJTUVscW5jUWlkT053SlQ3RmMtbXdrZjNESFE1Mm1WSE5aSkhsVHdGZVhoUDFKZUJwek1tOFFlTQ&q=https%3A%2F%2Fwww.instagram.com%2Fbarqteamps%2F
+* you can also check our personal accounts in 1.1. [Team Management](#Team-Management)
+
+## 1.3Vehicle Strengths
 *  Chassis and Mechanism : Our vehicle was meticulously built from scratch, utilizing CNC-machined and 3D-printed parts. We also incorporated components from the EV3 Lego kit for critical mechanisms, such as the steering system and differential.
 
 * Speed: Powered by a 24-volt lithium battery, our car achieves impressive speeds, giving it a competitive edge in performance.
@@ -258,7 +263,7 @@ Our car is versatile enough to compete in multiple competitions beyond the Futur
 
 
 
-## Barq team's social accounts
+
 
 ## Overview
 Our car is built on an RC structure featuring four wheels and a rear-wheel drive system. It is powered by a DC motor that controls the wheels and a servo motor for steering. The car is equipped with three ultrasonic sensors , gyroscope and a RGB color sensor to ensure it stays on the right path.
