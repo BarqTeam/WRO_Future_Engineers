@@ -209,6 +209,7 @@ The gyroscope offset (\text{gyro_z_offset}) is vital as gyroscopes can experienc
 ## 6. Obstacle Avoidance Round Challenge
 In this round, we integrated the Pi camera to enable the car to navigate between obstacles more efficiently. We started by developing the optimal code to achieve the best resolution and frame rate, while also fine-tuning color filters to ensure precise detection of red and green obstacles. This setup allows the car to identify and respond to obstacles accurately, minimizing the risk of errors. 
 Here, you can see the code we developed to optimize the color filters, ensuring the highest accuracy in obstacle detection. This code is tailored to deliver the best possible resolution and frame rate, allowing our car to efficiently identify and respond to red and green obstacles with minimal errors.
+
 cpp
 import picamera
 import cv2
@@ -217,17 +218,17 @@ import serial
 from picamera.array import PiRGBArray
 import time
 
-# Initialize serial communication with Arduino
+#Initialize serial communication with Arduino
 arduino = serial.Serial('/dev/ttyACM0', 115200)  # Replace with your actual port
 
-# Initialize Picamera
+#Initialize Picamera
 camera = picamera.PiCamera()
 camera.resolution = (500, 200)  # Lower the resolution for faster processing
 camera.framerate = 60  # Increase the frame rate
 camera.brightness = 50  # Increase brightness by approximately 50%
 raw_capture = PiRGBArray(camera, size=(500, 200))
 
-# Allow the camera to warm up
+#Allow the camera to warm up
 time.sleep(0.1)
 
 def format_data(object_type, x, y, width, height):
