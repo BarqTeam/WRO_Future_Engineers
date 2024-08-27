@@ -20,69 +20,34 @@ This repository contains engineering materials of a self-driven vehicle's model 
 
    1.1. [Team Management](#Team-Management)
    
-   1.2. [Vehicle Strengths](#Vehicle-Strengths)
+   1.2. [Vehicle Strengths](#Vehicle-Strengths)  
 
-   1.3. [Strengths and Limitations of Our Vehicle](strengths-and-limitations-of-our-vehicle)   
-
-2. [Programming Language and Libraries](programming-language-and-libraries)
+2. [Programming Language ](programming-language)
    
-   2.1. [Programming Language and Libraries](programming-language-and-libraries)
- 
-   2.2. [Detecting Turns and Direction](#detecting-turns-and-direction)
    
-   2.3. [Lap Counting Mechanism](#lap-counting-mechanism)
+3. [The First Chassis](#The-First-Chassis)
+
    
-   2.4. [IMU-Based Steering](#imu-based-steering)
+4. [Programming Challenges](#Programming-Challenges)
+
    
-3. [Open Challenge](#open-challenge-algorithm)
-
-   3.1. [Open Challenge Overview](#open-challenge-overview)
-
-   3.2. [PID Controller](#pd-controller)
    
-   3.3. [Turn Execution](#turn-execution)
+5. [Lap Counting Mechanism](#Lap-Counting-Mechanism)
+
    
-4. [Obstacle Avoidance Round Challenge](#obstacle-avoidance-round-challenge)
+6. [Obstacle Avoidance Round Challenge](#Obstacle-Avoidance-Round-Challenge)
 
-   4.1. [Obstacle Challenge Overview](#obstacle-challeng-overview)
-
-   4.2. [Pillar Detection](#pillar-detection)
-    
-   4.3. [Obstacle Avoidance Strategy](#obstacle-avoidance-strategy)
    
-5. [Designing Process](#designing-process)
-
-   5.1. [Steering System](#steering-system)
-    
-   5.2. [Differential Gear](#differential-gear)
    
-   5.3. [Chassis](#chassis)
-   
-   5.4. [Mechanism](#mechanism)
-   
-   5.5. [Ackermann Steering Mechanism](#ackermann-steering-mechanism)
-   
-6. [Power and Sense Management](#power-and-sense-management)
+7. [Power](#Power)
 
-   6.1. [Power Source](#power-source)
-    
-   6.2. [Sensors We Used and Their Functions](#sensors-we-used-and-their-functions)
-   
-7. [Hurdles and Challenges](#hurdles-and-challenges)
 
-   7.1. [Designing Process Challenges](#designing-process-challenges)
-    
-   7.2. [Sensor and Coding Challenges](#sensor-and-coding-challenges)
 
-   7.3. [Mechanical Challenges](mechanical-challenges)
+8. [components](#components)
 
-8. [Future Work](#future-work)
+9. [Future Work](#Future-Work)
 
-9. [Appendices](#appendices)
-
-   9.1. [Datasheets and Specifications](#datasheets-and-specifications)
-      
-   9.2. [References](#references)
+  
 
 ## Introduction
 
@@ -171,7 +136,7 @@ The front ultrasonic sensor played a critical role in detecting when the car was
 
 This approach emphasized spatial awareness and precise distance measurement, allowing the car to make informed directional decisions based on its environment rather than relying on visual cues. Ultimately, we decided that this solution was the most effective for our needs.
 
-## Lap Counting Mechanism:
+## 5.Lap Counting Mechanism:
 #### Loop-Based Counting with Ultrasonic Sensor and IMU
 
 ##### Overview:
@@ -279,6 +244,9 @@ Key Characteristics of the 24V LiPo Battery:
 | 3        | *HC-SR04 Ultrasonic Sensor  | https://www.sparkfun.com/products/15569 |
 |1      | lithum Battery 24v     | "We have connected two 12-volt batteries in series using a 6S Battery Management System (BMS) to ensure balanced charging and efficient power management."   |
 |1      | HW-083       | https://www.elektormagazine.com/labs/hw-083-hack-evolution-charger   |
+
+## 9.Future Work
+Our car is versatile enough to compete in multiple competitions beyond the Future Engineers competition. Its high speed, lightweight design, and exceptional flexibility in turning—thanks to the differential gear system—make it a strong contender. Additionally, the precise steering system enhances its maneuverability, allowing it to perform with accuracy and agility across various challenges.
 
 
 
