@@ -166,7 +166,7 @@ z
 The gyroscope offset (\text{gyro_z_offset}) is vital as gyroscopes can experience slight errors or biases over time, known as drift. By calculating and subtracting this offset, we ensure that the yaw angle calculation remains accurate, preventing gradual deviations from the true value.
 
 ## 6. Obstacle Avoidance Round Challenge
-In this round we included the pi camera for  this round
+In this round, we integrated the Pi camera to enable the car to navigate between obstacles more efficiently. We started by developing the optimal code to achieve the best resolution and frame rate, while also fine-tuning color filters to ensure precise detection of red and green obstacles. This setup allows the car to identify and respond to obstacles accurately, minimizing the risk of errors.
 
 ## 7.Power 
 Lithium Polymer (LiPo) batteries are highly favored in robotics due to their superior energy density, lightweight construction, and capability to deliver high currents. These attributes make them exceptionally suited for applications that demand both substantial power and agility, such as our autonomous robot.
@@ -208,6 +208,8 @@ Key Characteristics of the 24V LiPo Battery:
 | 3        | *HC-SR04 Ultrasonic Sensor  | https://www.sparkfun.com/products/15569 |
 |1      | lithum Battery 24v     | "We have connected two 12-volt batteries in series using a 6S Battery Management System (BMS) to ensure balanced charging and efficient power management."   |
 |1      | HW-083       | https://www.elektormagazine.com/labs/hw-083-hack-evolution-charger   |
+
+
 
 
 
