@@ -13,6 +13,77 @@ This repository contains engineering materials of a self-driven vehicle's model 
 * `models` is for the files for models used by 3D printers, laser cutting machines and CNC machines to produce the vehicle elements. If there is nothing to add to this location, the directory can be removed.
 * `other` is for other files which can be used to understand how to prepare the vehicle for the competition. It may include documentation how to connect to a SBC/SBM and upload files there, datasets, hardware specifications, communication protocols descriptions etc. If there is nothing to add to this location, the directory can be removed.
 
+
+  ## READ.ME table of content
+
+1. [Project Overview](#project-overview)
+
+   1.1. [Team Management](#Team-Management)
+   
+   1.2. [Vehicle Strengths](#Vehicle-Strengths)
+
+   1.3. [Strengths and Limitations of Our Vehicle](strengths-and-limitations-of-our-vehicle)   
+
+2. [Programming Language and Libraries](programming-language-and-libraries)
+   
+   2.1. [Programming Language and Libraries](programming-language-and-libraries)
+ 
+   2.2. [Detecting Turns and Direction](#detecting-turns-and-direction)
+   
+   2.3. [Lap Counting Mechanism](#lap-counting-mechanism)
+   
+   2.4. [IMU-Based Steering](#imu-based-steering)
+   
+3. [Open Challenge](#open-challenge-algorithm)
+
+   3.1. [Open Challenge Overview](#open-challenge-overview)
+
+   3.2. [PID Controller](#pd-controller)
+   
+   3.3. [Turn Execution](#turn-execution)
+   
+4. [Obstacle Avoidance Round Challenge](#obstacle-avoidance-round-challenge)
+
+   4.1. [Obstacle Challenge Overview](#obstacle-challeng-overview)
+
+   4.2. [Pillar Detection](#pillar-detection)
+    
+   4.3. [Obstacle Avoidance Strategy](#obstacle-avoidance-strategy)
+   
+5. [Designing Process](#designing-process)
+
+   5.1. [Steering System](#steering-system)
+    
+   5.2. [Differential Gear](#differential-gear)
+   
+   5.3. [Chassis](#chassis)
+   
+   5.4. [Mechanism](#mechanism)
+   
+   5.5. [Ackermann Steering Mechanism](#ackermann-steering-mechanism)
+   
+6. [Power and Sense Management](#power-and-sense-management)
+
+   6.1. [Power Source](#power-source)
+    
+   6.2. [Sensors We Used and Their Functions](#sensors-we-used-and-their-functions)
+   
+7. [Hurdles and Challenges](#hurdles-and-challenges)
+
+   7.1. [Designing Process Challenges](#designing-process-challenges)
+    
+   7.2. [Sensor and Coding Challenges](#sensor-and-coding-challenges)
+
+   7.3. [Mechanical Challenges](mechanical-challenges)
+
+8. [Future Work](#future-work)
+
+9. [Appendices](#appendices)
+
+   9.1. [Datasheets and Specifications](#datasheets-and-specifications)
+      
+   9.2. [References](#references)
+
 ## Introduction
 
 Hello everyone,
