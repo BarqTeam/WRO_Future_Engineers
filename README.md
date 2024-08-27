@@ -207,7 +207,136 @@ z
 The gyroscope offset (\text{gyro_z_offset}) is vital as gyroscopes can experience slight errors or biases over time, known as drift. By calculating and subtracting this offset, we ensure that the yaw angle calculation remains accurate, preventing gradual deviations from the true value.
 
 ## 6. Obstacle Avoidance Round Challenge
-In this round, we integrated the Pi camera to enable the car to navigate between obstacles more efficiently. We started by developing the optimal code to achieve the best resolution and frame rate, while also fine-tuning color filters to ensure precise detection of red and green obstacles. This setup allows the car to identify and respond to obstacles accurately, minimizing the risk of errors.
+In this round, we integrated the Pi camera to enable the car to navigate between obstacles more efficiently. We started by developing the optimal code to achieve the best resolution and frame rate, while also fine-tuning color filters to ensure precise detection of red and green obstacles. This setup allows the car to identify and respond to obstacles accurately, minimizing the risk of errors. 
+Here, you can see the code we developed to optimize the color filters, ensuring the highest accuracy in obstacle detection. This code is tailored to deliver the best possible resolution and frame rate, allowing our car to efficiently identify and respond to red and green obstacles with minimal errors.
+cpp
+import picamera
+import cv2
+import numpy as np
+import serial
+from picamera.array import PiRGBArray
+import time
+
+# Initialize serial communication with Arduino
+arduino = serial.Serial('/dev/ttyACM0', 115200)  # Replace with your actual port
+
+# Initialize Picamera
+camera = picamera.PiCamera()
+camera.resolution = (500, 200)  # Lower the resolution for faster processing
+camera.framerate = 60  # Increase the frame rate
+camera.brightness = 50  # Increase brightness by approximately 50%
+raw_capture = PiRGBArray(camera, size=(500, 200))
+
+# Allow the camera to warm up
+time.sleep(0.1)
+
+def format_data(object_type, x, y, width, height):
+    """Format data as a string."""
+    return f"{object_type}{x:05}{y:05}{width:05}{height:05}\n"
+
+def get_largest_contour(mask, min_area=500):
+    """Find the largest contour in the given mask, ignoring small contours."""
+    contours, _ = cv2.findContours(mask, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+    filtered_contours = [c for c in contours if cv2.contourArea(c) > min_area]
+    if filtered_contours:
+        largest_contour = max(filtered_contours, key=cv2.contourArea)
+        return largest_contour
+    return None
+
+try:
+    for frame in camera.capture_continuous(raw_capture, format="bgr", use_video_port=True):
+        imageFrame = frame.array
+
+        # Increase contrast
+        contrast_factor = 1.5  # Adjust this value to increase contrast
+        imageFrame = cv2.convertScaleAbs(imageFrame, alpha=contrast_factor, beta=0)
+
+        # Convert BGR image to HSV
+        hsvFrame = cv2.cvtColor(imageFrame, cv2.COLOR_BGR2HSV)
+
+        # Increase saturation and brightness to make colors more vivid
+        hsvFrame[:, :, 1] = cv2.add(hsvFrame[:, :, 1], 30)
+        hsvFrame[:, :, 2] = cv2.add(hsvFrame[:, :, 2], 30)
+
+        # Define color ranges
+        red_lower1 = np.array([0, 140, 140], np.uint8)
+        red_upper1 = np.array([10, 255, 255], np.uint8)
+        red_lower2 = np.array([160, 140, 140], np.uint8)
+        red_upper2 = np.array([180, 255, 255], np.uint8)
+
+        green_lower = np.array([35, 100, 100], np.uint8)
+        green_upper = np.array([85, 255, 255], np.uint8)
+
+        # Create masks for red and green colors
+        red_mask1 = cv2.inRange(hsvFrame, red_lower1, red_upper1)
+        red_mask2 = cv2.inRange(hsvFrame, red_lower2, red_upper2)
+        red_mask = cv2.bitwise_or(red_mask1, red_mask2)
+
+        green_mask = cv2.inRange(hsvFrame, green_lower, green_upper)
+
+        # Apply additional thresholding to refine masks
+        kernel = np.ones((7, 7), "uint8")  # Slightly larger kernel size
+        red_mask = cv2.dilate(red_mask, kernel)
+        red_mask = cv2.erode(red_mask, kernel)
+
+        green_mask = cv2.dilate(green_mask, kernel)
+        green_mask = cv2.erode(green_mask, kernel)
+
+        # Find the largest red and green objects
+        largest_red_contour = get_largest_contour(red_mask)
+        largest_green_contour = get_largest_contour(green_mask)
+
+        # Process the largest red object
+        if largest_red_contour is not None:
+            rect = cv2.minAreaRect(largest_red_contour)
+            box = cv2.boxPoints(rect)
+            box = np.int0(box)
+            imageFrame = cv2.drawContours(imageFrame, [box], 0, (0, 0, 255), 2)
+            
+            width = int(abs(rect[1][0]))
+            height = int(abs(rect[1][1]))
+            
+            # Calculate the center X position
+            x_center = int((box[0][0] + box[2][0]) / 2)
+            y_center = int(rect[0][1])
+            
+            data_red = format_data(1, x_center, y_center, width, height)
+            arduino.write(data_red.encode())
+            print(data_red)
+        # Process the largest green object
+        if largest_green_contour is not None:
+            rect = cv2.minAreaRect(largest_green_contour)
+            box = cv2.boxPoints(rect)
+            box = np.int0(box)
+            imageFrame = cv2.drawContours(imageFrame, [box], 0, (0, 255, 0), 2)
+            
+            width = int(abs(rect[1][0]))
+            height = int(abs(rect[1][1]))
+            
+            # Calculate the center X position
+            x_center = int((box[0][0] + box[2][0]) / 2)
+            y_center = int(rect[0][1])
+            
+            data_green = format_data(2, x_center, y_center, width, height)
+            arduino.write(data_green.encode())
+            print("green")
+            print(data_green)
+        # Display the result
+        cv2.imshow("colors", imageFrame)
+        
+        # Clear the stream for the next frame
+        raw_capture.truncate(0)
+
+        # Add a delay and check for 'q' key press
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            break
+
+finally:
+    # Close serial connection and camera when done
+    arduino.close()
+    camera.close()
+    cv2.destroyAllWindows()
+
 
 ## 7.Power 
 Lithium Polymer (LiPo) batteries are highly favored in robotics due to their superior energy density, lightweight construction, and capability to deliver high currents. These attributes make them exceptionally suited for applications that demand both substantial power and agility, such as our autonomous robot.
